@@ -1,0 +1,20 @@
+[package]
+name = "yeebar"
+version = "0.2.0"
+edition = "2024"
+description = "Windows tray app + CLI to control a Yeelight Libra 2 monitor light bar over the LAN"
+license = "MIT"
+repository = "https://github.com/MinixBF/yeebar"
+
+[dependencies]
+serde_json = "1"
+
+[target.'cfg(windows)'.dependencies]
+tray-icon = "0.26"
+windows-sys = { version = "0.61", features = ["Win32_UI_WindowsAndMessaging", "Win32_System_Console", "Win32_Foundation", "Win32_System_Threading", "Win32_Security", "Win32_System_SystemInformation"] }
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
+codegen-units = 1
