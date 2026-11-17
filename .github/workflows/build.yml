@@ -26,7 +26,7 @@ jobs:
           $h = (Get-FileHash target/release/yeebar.exe -Algorithm SHA256).Hash.ToLower()
           "$h  yeebar.exe" | Out-File -Encoding ascii target/release/yeebar.exe.sha256
           Get-Content target/release/yeebar.exe.sha256
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: yeebar
           path: |
