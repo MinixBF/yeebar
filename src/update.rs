@@ -51,6 +51,12 @@ mod imp {
             Ok(String::from_utf8_lossy(&out.stdout).trim().to_string())
         } else {
             let err = String::from_utf8_lossy(&out.stderr);
+            if err.contains("Not Found") || err.contains("404") {
+                return Err("aucune version publiée trouvée sur GitHub".into());
+            }
+            if err.contains("resolve") || err.contains("connect") {
+                return Err("GitHub injoignable (pas d'Internet ?)".into());
+            }
             Err(err
                 .lines()
                 .find(|l| !l.trim().is_empty())

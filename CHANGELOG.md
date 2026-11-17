@@ -2,6 +2,10 @@
 
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/), versions [SemVer](https://semver.org/lang/fr/).
 
+## 0.2.1
+
+- Mise à jour : messages d'erreur plus clairs (aucune version publiée, GitHub injoignable).
+
 ## 0.2.0
 
 Première version publique.
