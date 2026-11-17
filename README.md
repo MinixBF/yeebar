@@ -21,6 +21,7 @@ Une icône près de l'horloge pour allumer, éteindre et régler la lumière, un
 ## Installation
 
 1. Téléchargez `yeebar.exe` depuis la [dernière version](https://github.com/MinixBF/yeebar/releases/latest) et rangez-le dans un dossier à vous, par exemple `C:\Outils\`. Évitez *Program Files*, où l'app ne pourrait pas se mettre à jour.
+   *Ou avec winget :* `winget install MinixBF.yeebar`, puis lancez `yeebar` (et `winget upgrade MinixBF.yeebar` pour mettre à jour).
 2. Dans l'app **Yeelight** du téléphone : ouvrez la barre → ⚙️ → activez **Contrôle LAN** (*LAN Control*).
 3. Lancez `yeebar.exe`. L'icône apparaît près de l'horloge et la barre est trouvée automatiquement.
 4. Clic droit → **Démarrer avec Windows**.

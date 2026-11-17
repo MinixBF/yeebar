@@ -1,6 +1,6 @@
 [package]
 name = "yeebar"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2024"
 description = "Windows tray app + CLI to control a Yeelight Libra 2 monitor light bar over the LAN"
 license = "MIT"

@@ -2,6 +2,11 @@
 
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/), versions [SemVer](https://semver.org/lang/fr/).
 
+## 0.2.2
+
+- L'exe n'a plus besoin du « Visual C++ Redistributable » (runtime lié statiquement).
+- Installation possible avec `winget install MinixBF.yeebar`.
+
 ## 0.2.1
 
 - Mise à jour : messages d'erreur plus clairs (aucune version publiée, GitHub injoignable).
