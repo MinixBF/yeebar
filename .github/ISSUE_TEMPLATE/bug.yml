@@ -1,0 +1,28 @@
+name: Bug / appareil non compatible
+description: Quelque chose ne marche pas, ou votre lampe Yeelight ne réagit pas
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version de yeebar
+      description: "`.\\yeebar.exe version`"
+    validations:
+      required: true
+  - type: textarea
+    id: discover
+    attributes:
+      label: Résultat de `.\yeebar.exe discover | Out-Host`
+      description: Modèle et firmware de la lampe (masquez l'adresse IP si vous le souhaitez).
+      render: text
+  - type: textarea
+    id: test
+    attributes:
+      label: Résultat de `.\yeebar.exe test | Out-Host`
+      render: text
+  - type: textarea
+    id: what
+    attributes:
+      label: Ce qui se passe / ce qui était attendu
+    validations:
+      required: true
